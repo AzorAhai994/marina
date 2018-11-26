@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Frizure Marina</title>
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="marina.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="marina.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="datetimepicker.min.css">
+
+</head>
+
+<body>
+    <!--
+        <div class="nav">
+    <div class="toggle-button" id="toggle">
+        <div id="circle" class="krug"></div>
+        <span class="bar top"></span>
+        <span class="bar middle"></span>
+        <span class="bar bottom"></span>
+    </div>
+</div>
+    -->
+    <header id="header">
+        <nav id="navbar">
+            <li><a href="">Početna</a></li>
+            <li><a href="">Usluge</a></li>
+            <li>
+                <div id="logo"><img src="marina.png" alt=""></div>
+            </li>
+            <li><a href="">Galerija</a></li>
+            <li><a href="">Kontakt</a></li>
+        </nav>
+    </header>
+    <section>
+        <div id="page1" class="page1 wrapper">
+
+            <div class="gradient-border" id="box">
+                <div class="text">
+                    <p>FRIZURE MARINA</p>
+                </div>
+
+            </div>
+
+            <div class="form">
+
+
+                <script type="text/javascript">
+                    var submitted = false;
+                </script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='form2.html';}"></iframe>
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLSdSDFTPNhdd5Da5HAw6q8vYeaS6PTrJA2Tc8jpm4X8TiXv2bA/formResponse"
+                    method="post" id="mG61Hd" target="hidden_iframe" onsubmit="submitted=true;">
+
+
+
+
+                    <div class="ime">
+                        <i class="fas fa-user icon"></i>
+                        <input type="text" class="quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf"
+                            autocomplete="off" tabindex="0" aria-label="Ime" aria-describedby="i.desc.729258678 i.err.729258678"
+                            name="entry.899990987" value="" required="" dir="auto" data-initial-dir="auto"
+                            data-initial-value="" placeholder="Ime" aria-invalid="true">
+                    </div>
+                    <div class="search">
+                        <i class="fa fa-phone icon"></i>
+                        <input type="text" class="quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf"
+                            autocomplete="off" tabindex="0" aria-label="Broj telefona" aria-describedby="i.desc.1849056476 i.err.1849056476"
+                            name="entry.225676929" value="" required="" dir="auto" data-initial-dir="auto"
+                            data-initial-value="" placeholder="Broj telefona" aria-invalid="true">
+                    </div>
+
+
+                    <div class="datum">
+                        <i class="fas fa-calendar icon"></i>
+                        <div id="picker"></div>
+
+                        <input id="result" value="" type="text" class="quantumWizTextinputPaperinputInput exportInput"
+                            jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Datum" aria-describedby="i.desc.1000603824 i.err.1000603824"
+                            name="entry.1862322567" value="datum" dir="auto" data-initial-dir="auto" data-initial-value=""
+                            placeholder="Datum" aria-invalid="false">
+
+
+
+                    </div>
+
+                    <input class="button" type="submit" value="ZAKAZIVANJE">
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <div id="page2" class="page2 wrapper"></div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment-with-locales.min.js"></script>
+    <script src="datetimepicker.js"></script>
+    <!-- <script src="../js/jquery.scrollify.js"></script>
+    <script>
+        $(function () {
+            $.scrollify({
+                section: ".wrapper",
+                //standardScrollElements: ".page2",
+                //interstitialSection: ".grid--sect",
+                scrollSpeed: 650,
+                touchScroll: true,
+                setHeights: false,
+                interstitialSection: ".nav",
+            });
+        });
+    </script>
+    -->
+
+    <script>
+        /*
+        $(document).ready(function () {
+            let pixelToMove = -10;
+            $("body").mousemove(function (e) {
+                var width = $(this).innerWidth();
+                var height = $(this).innerHeight();
+                var newValueX = (e.pageX / width) * pixelToMove;
+                var newValueY = (e.pageY / height) * pixelToMove;
+                $(this).css('background-position', newValueX + '%' + ' ' + newValueY + '%');
+            });
+        });*/
+    </script>
+    ​<script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        /* window.onscroll = function () {
+             scrollFunction()
+         };
+
+          function scrollFunction() {
+              if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                  document.getElementById("header").style.height = "10vh";
+                  document.getElementById("logo").style.height = "25px";
+              } else {
+                  document.getElementById("header").style.height = "17vh";
+                  document.getElementById("logo").style.height = "35px";
+              }
+          }*/
+    </script>
+    <script>
+        $(document).ready(function () {
+            var scrollTop = 0;
+            $(window).scroll(function () {
+                scrollTop = $(window).scrollTop();
+                $('.counter').html(scrollTop);
+
+                if (scrollTop >= 80) {
+                    $('#header').addClass('scrolled-nav');
+                } else if (scrollTop < 80) {
+                    $('#header').removeClass('scrolled-nav');
+                }
+            });
+        });
+    </script>
+    <script>/*
+        $(function () {
+            var body = $("#page1");
+            var backgrounds = new Array('url("blow.jpg")', 'url("hair3.jpg")', 'url("hair2.jpg")');
+            var current = 0;
+
+            function nextBackground() {
+                body.css('background',
+                    backgrounds[current = ++current % backgrounds.length]
+                );
+
+                setTimeout(nextBackground, 5000);
+            }
+            setTimeout(nextBackground, 5000);
+            body.css('background', backgrounds[0]);
+        });
+    </script>
+    <script>
+        $('#picker').dateTimePicker({
+            dateFormat: "DD/MM/YYYY HH:mm",
+            selectData: "now",
+            showTime: true,
+            title: "Izaberite datum i vreme",
+            positionShift: {
+                top: -191,
+                left: 350
+            }
+
+        });
+    </script>
+</body>
+
+</html>
